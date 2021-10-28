@@ -30,7 +30,8 @@
 }
 
 body {
-    margin: 0
+    margin: 0;
+    z-index: 1;
 }
 
 #index-body {
@@ -271,6 +272,7 @@ body {
     box-shadow: 0px 2px 10px #cecdcd;
     text-decoration: none;
     color: black;
+    z-index: 1;
 }
 .restaurant-map>div {
     width: 320px;
@@ -298,6 +300,7 @@ body {
 .restaurant-map>div>div>span {
     width: 40px;
     height: 20px;
+    z-index: 2;
 }
 
 #empty-heart {
@@ -328,6 +331,14 @@ body {
 }
 
 #empty-heart:hover + #colored-heart {
+    display: block;
+}
+
+#empty-heart:active {
+    display: none;
+}
+
+#empty-heart:active + #colored-heart {
     display: block;
 }
 
@@ -406,6 +417,84 @@ footer>div>a>span>p {
 footer>div>a>span>i {
     font-size: 13px;
     width: 10px;
+}
+
+#loading-spinner {
+    width: auto;
+    height: 900px;
+    background-color: white;
+    padding: 250px 50px 50px 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    animation: loading-background 0s ease-in 1.5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading-background {
+    to {
+        width:0;
+        height:0;
+        padding: 0;
+        overflow:hidden;
+    }
+}
+
+@-webkit-keyframes loading-background {
+    to {
+        width:0;
+        height:0;
+        padding: 0;
+        visibility:hidden;
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#spin-wheel {
+    border: 16px solid #e6e6e6;
+    border-top: 16px solid #9356DC;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+    z-index: 1;
+}
+
+@keyframes spin-wheel {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes spin-wheel {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+
+#loading-spinner>img {
+    width: 100px;
+    height: 20px;
+    z-index: 2;
+    margin-bottom: -85px;
+}
+
+#content {
+    animation: showbody 0s 1.5s forwards;
+    visibility: hidden;
+}
+
+@keyframes showbody {
+    to   { visibility: visible; }
 }
 
 
@@ -520,19 +609,83 @@ footer>div>a>span>i {
 .dishes {
     width: auto;
     height: 220px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.dishes>div {
+.dishes>li {
     width: 350px;
     height: 60px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 2px 10px #cecdcd;
+    display: flex;
+    flex-flow: row;
 }
+
+.dishes-content {
+    width: 350px;
+    height: 60px;
+    display: flex;
+    flex-flow: row;
+}
+
+.dishes-content>div {
+    width: 350px;
+    height: 60px;
+}
+
+.dishes-content>div>div {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    flex-flow: column;
+}
+
+.dishes-content>div>div>span {
+    width: 250px;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.dishes-content>div>div>span>h1 {
+    font-family: Roboto-bold;
+    font-size: 15px;
+    padding: 0;
+}
+
+.dishes-content>div>div>span>p {
+    font-family: Roboto;
+    font-size: 13px;
+    padding: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dish-money {
+    font-family: Roboto-bold;
+    font-size: 15px;
+    padding: 33px 0 0px 60px;
+}
+
+.dish-money>h2 {
+    font-family: Roboto-bold;
+    font-size: 13px;
+    margin: 0;
+}
+
+.dishes-animation {
+    width: 30px;
+    height: 60px;
+    background-color: #99E2D0;
+}
+
 
 #button-section {
     width: auto;
@@ -548,6 +701,9 @@ footer>div>a>span>i {
 #button-section>a>div {
     width: 150px;
 }
+
+
+/* animation for the dishes*/
 
 /*--------------------------------------------------------- MENU PAGE 2 ----------------------------------------------------------*/
 
@@ -565,14 +721,14 @@ footer>div>a>span>i {
 
 #menu-section-1 {
     width: auto;
-    height: 1215px;
+    height: 1205px;
     display: flex;
     flex-flow: column;
 }
 
 #menu-1 {
     width: auto;
-    height: 1015px;
+    height: 1010px;
     background-color: #F2F2F2;
     border-radius: 35px 35px 0 0;
     z-index: 2;
@@ -595,7 +751,7 @@ footer>div>a>span>i {
 
 #menu-list-1 {
     width: auto;
-    height: 840px;
+    height: 320px;
 }
 
 #entrees-1 {
@@ -608,19 +764,26 @@ footer>div>a>span>i {
 .dishes-1 {
     width: auto;
     height: 300px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.dishes-1>div {
+.dishes-1>li {
     width: 350px;
     height: 60px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 2px 10px #cecdcd;
+    display: flex;
+    flex-flow: row;
 }
+
+
 
 /*--------------------------------------------------------- MENU PAGE 3 ----------------------------------------------------------*/
 
