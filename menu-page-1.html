@@ -14,109 +14,217 @@
     </head>
 
     <body id="menu-body">
-        <header>
-            <div id="return-head-logo">
-                <a href="index.html">
-                    <div>
-                        <i class="fas fa-arrow-left"></i>
-                        <img src="images/logo/ohmyfood.png" id="head-logo">
-                    </div>
-                </a>
-            </div>
-        </header>
-
-        <section id="menu-section">
-            <div id="menu-head-img-m1">
-                <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-            </div>
-            <div id="menu">
-                <div>
-                    <span>
-                        <h1>The Full Palette</h1>
-                        <span id="heart">
-                            <span id="empty-heart"><i class="far fa-heart"></i></span>
-                            <span id="colored-heart"><i class="fas fa-heart"></i></span>
-                        </span>
-                    </span>
-                </div>
-                <div id="menu-list">
-                    <div id="entrees">
-                        <div class="colored-hr">
-                            <span><p>ENTREES</p></span>
-                            <span><hr></span>
-                        </div>
-                        <div class="dishes">
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                            <div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="colored-hr">
-                            <span><p>MAIN DISH</p></span>
-                            <span><hr></span>
-                        </div>
-                        <div class="dishes">
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                            <div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="colored-hr">
-                            <span><p>DESSERTS</p></span>
-                            <span><hr></span>
-                        </div>
-                        <div class="dishes">
-                            <div>
-
-                            </div>
-                            <div>
-
-                            </div>
-                            <div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="button-section">
-                    <a href="#">
-                        <div id="restaurant-button">
-                            <p>Order</p>
+        
+        <div><div id="loading-spinner"> <img src="images/logo/ohmyfood.png"> <div id="spin-wheel"></div></div>
+        <div id="content">
+            <header>
+                <div id="return-head-logo">
+                    <a href="index.html">
+                        <div>
+                            <i class="fas fa-arrow-left"></i>
+                            <img src="images/logo/ohmyfood.png" id="head-logo">
                         </div>
                     </a>
                 </div>
-            </div>
+            </header>
 
-        </section>
+            <section id="menu-section">
+                <div id="menu-head-img-m1">
+                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                </div>
+                <div id="menu">
+                    <div>
+                        <span>
+                            <h1>The Full Palette</h1>
+                            <span id="heart">
+                                <span id="empty-heart"><i class="far fa-heart"></i></span>
+                                <span id="colored-heart"><i class="fas fa-heart"></i></span>
+                            </span>
+                        </span>
+                    </div>
+                    <div id="menu-list">
+                        <div id="entrees">
+                            <div class="colored-hr">
+                                <span><p>ENTREES</p></span>
+                                <span><hr></span>
+                            </div>
+                            <ul class="dishes">
+                                <li>
+                                    <div class="dishes-content">
+                                        <div>
+                                            <div>
+                                                <span><h1>Escargot</h1></span>
+                                                <span><p>With southern French spices</p></span>
+                                            </div>    
+                                        </div>
+                                        <div class="dish-money"><h2>25€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dishes-content">
+                                       <div>
+                                            <div>
+                                                <span><h1>Duck Foie Gras</h1></span>
+                                                <span><p>With black truffle shavings</p></span>
+                                            </div>    
+                                       </div>
+                                       <div class="dish-money"><h2>35€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dishes-content">
+                                       <div>
+                                            <div>
+                                                <span><h1>Fried Egg</h1></span>
+                                                <span><p>...</p></span>
+                                            </div>    
+                                       </div>
+                                       <div class="dish-money"><h2>20€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="colored-hr">
+                                <span><p>MAIN DISH</p></span>
+                                <span><hr></span>
+                            </div>
+                            <ul class="dishes">
+                                <li>
+                                    <div class="dishes-content">
+                                       <div>
+                                            <div>
+                                                <span><h1>Herb Encrusted Steak</h1></span>
+                                                <span><p>With delicately sliced and seasoned vegetables</p></span>
+                                            </div>    
+                                       </div>
+                                       <div class="dish-money"><h2>40€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dishes-content">
+                                       <div>
+                                            <div>
+                                                <span><h1>Ox Tail Shepard's Pie</h1></span>
+                                                <span><p>With black truffle and pureed parsnips</p></span>
+                                            </div>    
+                                       </div>
+                                       <div class="dish-money"><h2>35€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dishes-content">
+                                       <div>
+                                            <div>
+                                                <span><h1>Filet of Sole</h1></span>
+                                                <span><p>With citrus dressing</p></span>
+                                            </div>    
+                                       </div>
+                                       <div class="dish-money"><h2>44€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="colored-hr">
+                                <span><p>DESSERTS</p></span>
+                                <span><hr></span>
+                            </div>
+                            <ul class="dishes">
+                                <li>
+                                    <div class="dishes-content">
+                                       <div>
+                                            <div>
+                                                <span><h1>Paris-Brest</h1></span>
+                                                <span><p>Revisted</p></span>
+                                            </div>    
+                                       </div>
+                                       <div class="dish-money"><h2>18€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dishes-content">
+                                       <div>
+                                            <div>
+                                                <span><h1>Chocolate Macaroons</h1></span>
+                                                <span><p>With vanilla ice cream</p></span>
+                                            </div>    
+                                       </div>
+                                       <div class="dish-money"><h2>22€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dishes-content">
+                                       <div>
+                                            <div>
+                                                <span><h1>Chocolate Mousse</h1></span>
+                                                <span><p>With spices and black truffle</p></span>
+                                            </div>    
+                                       </div>
+                                       <div class="dish-money"><h2>23€</h2>
+                                            <div class="dishes-animation">
+                                            <span id="spin-icon"><i class="fas fa-check-circle"></i></span>
+                                            </div>
+                                        </div> 
+                                    </div>  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="button-section">
+                        <a href="#">
+                            <div id="restaurant-button">
+                                <p>Order</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </section>
+
+            <footer>
+                <div id="footlogo"><img src="images/logo/ohmyfood@2x.svg"></div>
+                <div>
+                    <a><span><i class="fas fa-utensils"></i><p>Suggest a restaurant</p></span></a>
+                    <a><span><i class="fas fa-hands-helping"></i><p>Become a partner</p></span></a>
+                    <a><p>Legal</p></a>
+                    <a><p>Contact</p></a>
+                </div>
+            </footer>
+        </div>
 
     </body>
-
-
-    <footer>
-        <div id="footlogo"><img src="images/logo/ohmyfood@2x.svg"></div>
-        <div>
-            <a><span><i class="fas fa-utensils"></i><p>Suggest a restaurant</p></span></a>
-            <a><span><i class="fas fa-hands-helping"></i><p>Become a partner</p></span></a>
-            <a><p>Legal</p></a>
-            <a><p>Contact</p></a>
-        </div>
-    </footer>
-
-
-
 
 </html>
