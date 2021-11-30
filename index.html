@@ -4,7 +4,7 @@
     <head>
         <title>ohmyfood</title>
         <link 
-        href="css/stylesheet.css"
+        href="scss/stylesheet.css"
         type="text/css"
         rel="stylesheet">
         <meta charset="utf-8">
@@ -20,43 +20,43 @@
         
         <div id="content">
 
-            <header id="index-header">
-                <span><img src="images/logo/ohmyfood.png" id="head-logo"></span>
-                <div id="box">
+            <header class="header">
+                <span class="logo"><img src="images/logo/ohmyfood.png" ></span>
+                <div class="box">
                     <div>
-                        <div id="city">
+                        <div class="city">
                             <span><i class="fas fa-map-marker-alt"></i> <p>Paris, Belleville</p></span>
                         </div></a>
-                        <div id="city-content">
+                        <div class="city-content">
                             <div><h1>Book the menu you like</h1></div>
                             <div><p>Discover top-of-the-art restaurants we picked for you</p></div>
                             <div><a href="#">
-                                <div id="restaurant-button">
+                                <div class="restaurant-button">
                                 <p>Explore our restaurants</p>
                             </div></a>
                             </div>
                         </div>
                     </div>
-                    <section id="how-it-works">
+                    <section class="how-it-works">
                         <div>
                             <h1>How it works</h1>
                         </div>
-                        <div id="steps">
-                            <a href="#"><div>
+                        <div class="steps">
+                            <a href="#"><div class="hover-box">
                                 <div class="numbers"><p>1</p></div>
                                 <div class="paragraph">
                                     <span><i class="fas fa-mobile-alt" id="phoneic"></i></span>
                                     <span><p>Chose a restaurant</p></span>
                                 </div>
                             </div></a>
-                            <a href="#"><div>
+                            <a href="#"><div class="hover-box">
                                 <div class="numbers"><p>2</p></div>
                                 <div class="paragraph">
                                     <span><i class="fas fa-list-ul"></i></span>
                                     <span><p>Create your menu</p></span>
                                 </div>
                             </div></a>
-                            <a href="#"><div>
+                            <a href="#"><div class="hover-box">
                                 <div class="numbers"><p>3</p></div>
                                 <div class="paragraph">
                                     <span><i class="fas fa-store"></i></span>
@@ -74,7 +74,7 @@
                 <div>
                     <h1>Restaurants</h1>
                 </div>
-                <div id="maps">
+                <div class="maps">
                     <a href="menu-page-1.html" class="restaurant-map">
                         <span id="new-tag"><p>New</p></span>
                         <div>
@@ -84,7 +84,7 @@
                                     <span><h3>The Full Palette</h3></span>
                                     <span><p>New York</p></span>
                                 </div>
-                                <span>
+                                <span class="heart">
                                     <span id="empty-heart"><i class="far fa-heart"></i></span>
                                     <span id="colored-heart"><i class="fas fa-heart"></i></span>
                                 </span>
@@ -100,7 +100,7 @@
                                     <span><h3>The Enchanted Plate</h3></span>
                                     <span><p>New York</p></span>
                                 </div>
-                                <span>
+                                <span class="heart">
                                     <span id="empty-heart"><i class="far fa-heart"></i></span>
                                     <span id="colored-heart"><i class="fas fa-heart"></i></span>
                                 </span>
@@ -115,7 +115,7 @@
                                     <span><h3>Bastille</h3></span>
                                     <span><p>New York</p></span>
                                 </div>
-                                <span>
+                                <span class="heart">
                                     <span id="empty-heart"><i class="far fa-heart"></i></span>
                                     <span id="colored-heart"><i class="fas fa-heart"></i></span>
                                 </span>
@@ -130,7 +130,7 @@
                                     <span><h3>Le Gourmand</h3></span>
                                     <span><p>New York</p></span>
                                 </div>
-                                <span>
+                                <span class="heart">
                                     <span id="empty-heart"><i class="far fa-heart"></i></span>
                                     <span id="colored-heart"><i class="fas fa-heart"></i></span>
                                 </span>
@@ -141,15 +141,14 @@
             </section>
         
         
-        <footer>
-            <div id="footlogo"><img src="images/logo/ohmyfood@2x.svg"></div>
-            <div>
-                <a><span><i class="fas fa-utensils"></i><p>Suggest a restaurant</p></span></a>
-                <a><span><i class="fas fa-hands-helping"></i><p>Become a partner</p></span></a>
-                <a><p>Legal</p></a>
-                <a><p>Contact</p></a>
-            </div>
-        </footer>
+            <footer>
+                <div id="footlogo"><img src="images/logo/ohmyfood@2x.svg"></div>
+                <div>
+                    <a><span><i class="fas fa-utensils"></i><p>Suggest a restaurant</p></span></a>
+                    <a><span><i class="fas fa-hands-helping"></i><p>Become a partner</p></span></a>
+                    <a><p>Legal</p></a>
+                    <a href="contact-form.html"><p>Contact</p></a>                </div>
+            </footer>
 
         </div>
 
