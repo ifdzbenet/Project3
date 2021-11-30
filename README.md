@@ -1,5 +1,5 @@
 # Project3 - Ohmyfood
-Repository for my OpenClassrooms Project 3. Link: https://github.com/ifdzbenet/Project3
+Repository for my OpenClassrooms Project 3. Link: https://github.com/ifdzbenet/Project3.git
 
 This Project is built around the Project 3 of the Web Developer path from OpenClassrooms. 
 
